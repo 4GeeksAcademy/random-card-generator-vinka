@@ -3,27 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link
+      rel="shortcut icon"
+      href="https://www.svgrepo.com/show/177141/poker-cards.svg"
+    />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container d-flex justify-content-center">
+      <div
+        class="container-card col-2 d-flex flex-column justify-content-between"
+      >
+        <p class="card-container-figure align-self-start" id="figure-left"></p>
+        <p
+          class="card-container-number d-flex justify-content-center align-items-center"
+          id="card-number"
+        ></p>
+        <p class="card-container-figure align-self-end" id="figure-right"></p>
       </div>
     </div>
+    <div class="buttons-container d-flex justify-content-center">
+      <button class="button-new-card" onclick="generateCard()">New Card</button>
+    </div>
+    <div class="timer-container d-flex justify-content-center">
+      <p id="timer-display"></p>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>

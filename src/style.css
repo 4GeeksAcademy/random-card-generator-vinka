@@ -1,1 +1,54 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  margin: 4rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container-card {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+#card-number {
+  font-size: 6rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container-figure {
+  font-size: 4.5rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#figure-right {
+  transform: rotate(-180deg);
+}
+
+.buttons-container {
+  margin-top: 20px;
+}
+
+.button-new-card {
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 5px 20px 5px 20px;
+  background-color: #024b30;
+  color: white;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+#timer-display {
+  font-size: 1.5rem;
+  font-weight: 0.5rem;
+  margin-top: 20px;
+}
